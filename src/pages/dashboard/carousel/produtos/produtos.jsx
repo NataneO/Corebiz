@@ -1,3 +1,5 @@
+import * as S from './styled'
+
 export function Produtos (){
-    return <h1>Produtos</h1>
+    return <S.Produtos />
 }

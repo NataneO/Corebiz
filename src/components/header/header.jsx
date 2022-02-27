@@ -9,7 +9,7 @@ export function Header() {
                 <S.HeaderSection>
                 <S.LogoHeader></S.LogoHeader>
                 <form>
-                    <S.Input type="search" />
+                    <S.Input type="search" placeholder="O que está procurando?"/>
                 </form>
                 <S.Div className="profile">
                     Meu perfil

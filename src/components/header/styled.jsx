@@ -2,12 +2,12 @@ import styled, { css } from 'styled-components'
 import logo from '../../assets/img/logo.svg';
 
 export const Header = styled.div`
-height: 5rem;
+height: 4rem;
 color: #000;
 width: 100%;
-padding: 1rem 0;
+padding: .75rem 0;
 box-sizing:border-box;
-background: #fff;
+background: #f00;
 color: #000;
 position:relative;
 
@@ -20,14 +20,11 @@ ${props => props.darkmode && css`
 export const HeaderSection = styled.section`
  display:grid;
  height:100%;
- width:80%;
+ width:66rem;
  margin:0 auto;
- padding: .5rem 0;
- grid-template-columns: 3fr 6fr 2fr 1fr;
+ padding: 0;
+ grid-template-columns: 14rem 40rem 6rem 6rem;
 
- > * {
-    flex:1;
-  }
 
 ${props => props.darkmode && css`
   background: #000;
@@ -39,7 +36,7 @@ export const LogoHeader = styled.div`
     background-image: url(${logo});
     width:100%;
     height:100%;
-    background-size:10rem auto;
+    background-size:9.5rem auto;
     background-repeat: no-repeat;
 `
 
@@ -48,5 +45,9 @@ export const Div = styled.div`
 `
 
 export const Input = styled.input`
-   width:100%;
+    width: 100%;
+    height: 2rem;
+    padding: 0.6rem 0;
+    border: none;
+    border-bottom: 1px solid #000;
 `

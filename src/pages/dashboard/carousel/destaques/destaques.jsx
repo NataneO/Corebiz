@@ -1,3 +1,5 @@
+import * as S from './styled'
+
 export function Destaques (){
-    return <h1>Destaques</h1>
+    return <S.Destaques ></S.Destaques>
 }

@@ -1,3 +1,5 @@
+import * as S from './styled'
+
 export function Newsletter (){
-    return <h1>Newsletter</h1>
+    return <S.Newsletter />
 }
