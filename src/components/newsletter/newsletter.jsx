@@ -1,6 +1,11 @@
 import * as S from './styled'
+import React from "react";
+import axios from "axios";
 
 export function Newsletter() {
+
+
+    
     return (
         <S.Newsletter>
             <h3>Participe de nossas news com promoções e novidades!</h3>
