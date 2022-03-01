@@ -1,12 +1,10 @@
 import styled, { css } from 'styled-components';
 
 export const Destaques = styled.div`
-height: 16rem;
+height: 17rem;
 color: #000;
 width: 100%;
-padding: 1rem 0;
 box-sizing:border-box;
-background: #0f0;
 color: #000;
 position:relative;
 
@@ -15,3 +13,8 @@ ${props => props.darkmode && css`
   color: #fff;
 `}
 `;
+
+export const Slide = styled.div `
+  height:100%;
+  padding:5rem 3rem;
+`

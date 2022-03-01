@@ -7,7 +7,6 @@ color: #000;
 width: 100%;
 padding: .75rem 0;
 box-sizing:border-box;
-background: #f00;
 color: #000;
 position:relative;
 
