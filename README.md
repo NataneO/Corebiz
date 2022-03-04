@@ -35,8 +35,18 @@ npm install
 npm run dev
 ```
 
-### 2. Como testar? ###
-No desenvolvimento foram utilizadas as seguintes tecnologias: ReactJs, Reack Hooks, ContextAPI, StyledComponents, ReactSlick. O projeto também está hospedado no Netlify
+### 2. Beleza. Rodei o projeto, e agora? ###
+
+#### Como é um projeto desenvolvido para fins de teste, não conta com uma gama muito grande de funcionalidades. Contudo, há pontos a se atentar: ####
+1. Ao clicar no botão *Comprar* no caroussel de produtos, um novo produto é adicionado ao carrinho. Esse valor é armazenado no LocalStorage, então, mesmo que a página seja atualizada o valor se mantém.
+2. Todos os dados de produtoes são consumidos da API (aqui, com o Axios).
+3. Ao clicar em *Eu quero!* no scroll de newsletter, os dados são passados para outra API (aqui, com o Fetch).
+
+No desenvolvimento foram utilizadas as seguintes tecnologias: ReactJs, Reack Hooks, ContextAPI, StyledComponents, ReactSlick, Vite, Axios, etc. O projeto também está hospedado no Netlify.
 
 
+### 2. Tá ok. E os testes? ###
+#### Esses ainda estão em desenvolvimento. Volte em breve! ####
+
+## O projeto ainda está em fase de melhorias. Sinta-se a vontade para contribuir! ##
 
