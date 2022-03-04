@@ -52,6 +52,15 @@ export const Article =styled.article`
 
 text-align: ${props => props.textCenter ? "center" : "left"};
  
+
+
+${props => props.textCenter && css`
+  a.line-adjust{
+    line-height:1rem
+  }
+
+`}
+
 ${props => props.distribution && css`
   display:flex;
   justify-content:flex-end;

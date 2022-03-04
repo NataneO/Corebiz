@@ -8,6 +8,17 @@ body{
 .products .slick-slide>div {padding: 0 1rem;}
 
 .slick-dots li button:before {
-    color: orange;
+    color:  #FFF!important;
+    opacity: .25;
+    
   }
+
+.slick-dots li.slick-active button:before {
+    color:  #F8475F!important;
+    
+}
+
+.slick-dots{
+    bottom:1rem!important;
+}
 

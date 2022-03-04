@@ -16,7 +16,7 @@ export function Footer() {
                 <S.H6>+55 11 3090 1039</S.H6>
             </S.Article>
             <S.Article textCenter>
-                <S.ButtonContact><S.MessageIcon/><a> Entre em contato </a></S.ButtonContact>
+                <S.ButtonContact><S.MessageIcon/><a className="line-adjust"> Entre em contato </a></S.ButtonContact>
                 <S.ButtonContact><S.HeadphonesIcon/><a>Fale com o nosso consultor online </a></S.ButtonContact>
             </S.Article>
             <S.Article distribution>

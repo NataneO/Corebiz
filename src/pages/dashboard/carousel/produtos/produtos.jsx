@@ -8,9 +8,9 @@ export function Produtos() {
     function NextArrow(props) {
         const { className, onClick } = props;
         return (
-            <div
-                className={className}
-                onClick={onClick}
+            <S.ARight
+            className={className}   
+            onClick={onClick}
             />
         );
     }
@@ -18,9 +18,9 @@ export function Produtos() {
     function PrevArrow(props) {
         const { className, onClick } = props;
         return (
-            <div
-                className={className}
-                onClick={onClick}
+            <S.ALeft
+            className={className}   
+            onClick={onClick}
             />
         );
     }

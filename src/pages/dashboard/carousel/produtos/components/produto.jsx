@@ -12,8 +12,7 @@ export const Produto = (data) => {
     useEffect(() =>{
         window.localStorage.setItem('cartQtd', `${cart}`);
     })
- const b= ((parseFloat(29927))/100)
-    console.log(b)
+
     const config = {
         totalStars: 5,
         initialSelectedValue: data.props.stars,
@@ -21,7 +20,11 @@ export const Produto = (data) => {
         renderEmpty: "☆"
       };
 
-   
+      function formatCurrency(data){
+        const newValue = ((parseFloat(data))/100)
+        const toCurrency = newValue.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'});
+        return toCurrency
+      }
       
     return (
         <S.Product>
@@ -37,14 +40,10 @@ export const Produto = (data) => {
                 </S.ProductBasics>
                 <S.ProductPrices>
                 
-                {data.props.listPrice == null ? null : <h6>de 
-                    <Numeral
-        value={data.props.listPrice}
-        format={"0"}
-      /></h6>}
-                <h4>por {data.props.price.toFixed(2)}</h4>
+                {data.props.listPrice == null ? null : <h6>de {formatCurrency(data.props.listPrice)}</h6>}
+                <h4>por  {formatCurrency(data.props.price)}</h4>
             <h6>
-                {data.props.installments.length == 0 ? null : data.props.installments.map((item, index) => (<span key={index}>ou em {item.quantity}x de {item.value}</span>))}</h6>
+                {data.props.installments.length == 0 ? null : data.props.installments.map((item, index) => (<span key={index}>ou em {item.quantity}x de  {formatCurrency(item.value)}</span>))}</h6>
                 </S.ProductPrices>
                 </S.ProductDescription>
                 <Context.Consumer>

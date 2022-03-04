@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import OffFlag from '../../../../../assets/img/offFlag.svg'
 
 export const Image = styled.img`
 object-fit: cover;
@@ -70,14 +71,14 @@ export const ProductPrices = styled.div`
 `
 
 export const OffTag = styled.div`
-shape-inside:auto;
-position: absolute;
-top: 0;
-right: 0;
-border-bottom: 2rem solid transparent;
-border-left: 2rem solid transparent;
-border-top: 2rem solid #f00;
-border-right: 2rem solid #f00;
+    width: 5rem;
+    background-image: url(/src/assets/img/offFlag.svg);
+    background-size: 5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 5rem;
+    background-repeat: no-repeat;
 `
 
 export const Rating = styled.div`

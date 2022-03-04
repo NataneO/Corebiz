@@ -1,5 +1,25 @@
 import styled, { css } from 'styled-components';
 
+import {AngleLeft, AngleRight} from '@styled-icons/fa-solid'
+
+
+
+export const ALeft = styled(AngleLeft)`
+  color:#000;
+  left: -60px;
+  &:hover{
+    color:#666;
+  }
+`
+export const ARight = styled(AngleRight)`
+  color:#000;
+  right: -60px;
+  &:hover{
+    color:#666;
+  }
+`
+
+
 export const Produtos = styled.div`
 color: #000;
 width: 100%;
