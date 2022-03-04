@@ -1,27 +1,27 @@
-import * as S from './styled'
+import * as S from './styled';
+
 
 export function Footer() {
     return (
         <S.Footer>
-            <S.Article>
-                <h4>Localização</h4>
+            <S.Article address>
+                <S.H5>Localização</S.H5>
                 <S.Hr />
-                <h5>Avenida Andrômeda, 2000. Bloco 6 e 8 </h5>
+                <S.H6>Avenida Andrômeda, 2000. Bloco 6 e 8 </S.H6>
 
-                <h5>Alphavile SP</h5>
+                <S.H6>Alphavile SP</S.H6>
 
-                <h5>brasil@corebiz.ag</h5>
+                <S.H6>brasil@corebiz.ag</S.H6>
 
-                <h5>+55 11 3090 1039</h5>
+                <S.H6>+55 11 3090 1039</S.H6>
             </S.Article>
             <S.Article textCenter>
-                <div> Entre em contato
-                </div>
-                <div> Fale com o nosso consultor online</div>
+                <S.ButtonContact><S.MessageIcon/><a> Entre em contato </a></S.ButtonContact>
+                <S.ButtonContact><S.HeadphonesIcon/><a>Fale com o nosso consultor online </a></S.ButtonContact>
             </S.Article>
             <S.Article distribution>
-                <div>oi</div>
-                <div>oi</div>
+               <S.DistributionData>Created by <S.DistLogo creat /></S.DistributionData>
+               <S.DistributionData>Powered by <S.DistLogo distrib /></S.DistributionData>
                  </S.Article>
         </S.Footer>
     )

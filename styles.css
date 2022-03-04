@@ -3,3 +3,11 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+
+.products .slick-list {margin: 0 -1rem;}
+.products .slick-slide>div {padding: 0 1rem;}
+
+.slick-dots li button:before {
+    color: orange;
+  }
+

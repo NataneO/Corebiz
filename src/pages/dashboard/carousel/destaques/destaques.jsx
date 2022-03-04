@@ -1,30 +1,54 @@
 import React, { useEffect, useState, Component } from "react";
 import Slider from "react-slick";
-import * as S from './styled'
+import * as S from './styled';
+
+import woman from '../../../../assets/img/businesswoman.png'
+
 
 export function Destaques() {
 
-   
+
     const settings = {
         dots: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000
     };
 
 
-    return (<S.Destaques wideView> 
+    return (<S.Destaques wideView>
+
         <Slider {...settings}>
             <S.Slide>
-                <h3>Olá, o que você está buscando:</h3>
-                <h2>Criar ou migrar o seu ecommerce?</h2>
+                <S.Hightlights>
+                    <S.Description>
+                        <h3>Olá, o que você está buscando:</h3>
+                        <h1>Criar ou migrar o seu ecommerce?</h1>
+                    </S.Description>
+                </S.Hightlights>
+                <S.BackgroundContainer>
+                <S.SlideBg src={woman} />
+                </S.BackgroundContainer>
             </S.Slide>
 
+            
             <S.Slide>
-                <h3>Olá, o que você está buscando:</h3>
-                <h2>Criar ou migrar o seu ecommerce?</h2>
+                <S.Hightlights>
+                    <S.Description>
+                        <h3>Olá, o que você está buscando:</h3>
+                        <h1>Criar ou migrar o seu ecommerce?</h1>
+                    </S.Description>
+                </S.Hightlights>
+                <S.BackgroundContainer>
+                <S.SlideBg src={woman} />
+                </S.BackgroundContainer>
             </S.Slide>
+
+            
+
         </Slider>
     </S.Destaques>)
 }

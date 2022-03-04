@@ -31,11 +31,32 @@ export function Produtos() {
         slidesToShow: 4,
         slidesToScroll: 2,
         nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />
+        prevArrow: <PrevArrow />,
+        responsive: [
+        {
+          breakpoint: 1100,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 800,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     };
-
-
-
 
     const [loading, setLoading] = useState(true);
     const [products, setProducts] = useState([])
@@ -57,8 +78,9 @@ export function Produtos() {
 
     return (
         <S.Produtos>
-
-            <Slider {...settings}>
+        <h3>Mais vendidos</h3>
+        <S.Hr/>
+            <Slider {...settings} className="products" >
                 {loading && <div>Loading</div>}
                 {!loading && (
                     products.map(item =>
