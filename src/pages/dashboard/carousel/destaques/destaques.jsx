@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import * as S from './styled';
 
 import woman from '../../../../assets/img/businesswoman.png'
+import people from '../../../../assets/img/destaque2.jpeg'
 
 
 export function Destaques() {
@@ -43,7 +44,7 @@ export function Destaques() {
                     </S.Description>
                 </S.Hightlights>
                 <S.BackgroundContainer>
-                <S.SlideBg src={woman} />
+                <S.SlideBg src={people} />
                 </S.BackgroundContainer>
             </S.Slide>
 
