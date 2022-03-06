@@ -42,7 +42,7 @@ npm run dev
 2. Todos os dados de produtos são consumidos da API (aqui, com o Axios).
 3. Ao clicar em *Eu quero!* no scroll de newsletter, os dados são passados para outra API (aqui, com o Fetch).
 
-No desenvolvimento foram utilizadas as seguintes tecnologias: ReactJs, Reack Hooks, ContextAPI, StyledComponents, ReactSlick, Vite, Axios, etc. O projeto também está hospedado no Netlify.
+No desenvolvimento foram utilizadas as seguintes tecnologias: ReactJs, Reack Hooks, ContextAPI, StyledComponents, ReactSlick, Vite (build toll), Axios, etc. O projeto também está hospedado no Netlify.
 
 
 ### 2. Tá ok. E os testes? ###
